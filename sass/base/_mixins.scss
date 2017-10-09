@@ -1,0 +1,62 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+//////////////////////////////
+// Responsive
+//////////////////////////////
+
+@mixin max($maxwidth) {
+  @media only screen and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin mid($minwidth, $maxwidth) {
+  @media (min-width: $minwidth) and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$sm-width}) {
+    @content;
+  }
+}
+
+//////////////////////////////
+// Other
+//////////////////////////////
+
+@mixin clearfix {
+  &:before, &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin fullWidthBackground($background-color) {
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 10000%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1000%;
+    background-color: $background-color;
+    z-index: -1;
+  }
+}

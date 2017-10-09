@@ -1,0 +1,21 @@
+name: 'Theme name'
+description: 'Theme description.'
+base theme: classy
+package: Custom
+type: theme
+version: 1.0
+core: 8.x
+
+libraries:
+  - themename/global-styling
+
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+
+regions:
+  header: 'Header'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  sidebar: 'Sidebar'
+  footer: 'Footer'

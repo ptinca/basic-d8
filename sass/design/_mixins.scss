@@ -1,0 +1,53 @@
+/////////////////////////////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+/////////////////////////////////////////////////
+
+
+//////////////////////////////
+//
+// Responsive
+//
+//////////////////////////////
+
+@mixin max($maxwidth) {
+  @media only screen and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin mid($minwidth, $maxwidth) {
+  @media (min-width: $minwidth) and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin min($minwidth) {
+  @media only screen and (min-width: $minwidth) {
+    @content;
+  }
+}
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:              480px;
+
+// Small screen / tablet
+$screen-sm-min:              768px;
+
+// Medium screen / desktop
+$screen-md-min:              992px;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);

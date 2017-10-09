@@ -1,0 +1,94 @@
+///////////////////////////////////
+// HTML elements
+//
+// Override here the prime rules.
+///////////////////////////////////
+
+
+
+
+* { 
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $colorBlack;
+  font-family: $defaultFont;
+  font-size: 1.6em;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2.1rem 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+img {
+  display: block;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+* Responsive tables.
+*/
+@media screen and (max-width: 37.5em) { /* 600px */
+  th.priority-low,
+  td.priority-low,
+  th.priority-medium,
+  td.priority-medium {
+    display: none;
+  }
+}
+@media screen and (max-width: 60em) { /* 920px */
+  th.priority-low,
+  td.priority-low {
+    display: none;
+  }
+}

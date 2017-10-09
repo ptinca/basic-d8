@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////
+// Fonts
+//////////////////////////////
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700';
+
+// @font-face {
+//   font-family: 'icomoon';
+//   src: url('../fonts/icomoon.eot');
+//   src: url('../fonts/icomoon.svg#icomoon') format('svg'),
+//        url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/icomoon.woff') format('woff'),
+//        url('../fonts/icomoon.ttf') format('truetype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+
+
+
+//////////////////////////////
+// Breakpoints
+//////////////////////////////
+
+$md-width:    1300px;
+$sm-width:    640px;
+
+
+
+
+////////////////////////////////////////////////////////////
+// Named Colors : http://chir.ag/projects/name-that-color
+// Sorted by groups and intensities
+////////////////////////////////////////////////////////////
+
+
+// White/Black/Gray
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+
+// Default font family
+$defaultFont: 'Roboto', sans-serif;

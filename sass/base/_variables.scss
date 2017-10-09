@@ -31,9 +31,16 @@
 // Breakpoints
 //////////////////////////////
 
-$md-width:    1300px;
-$sm-width:    640px;
+$md-width:    1024px;
+$sm-width:    768px;
+$xs-width:    480px;
 
+$screen-md: $md-width;
+$screen-sm: $sm-width;
+$screen-xs: $xs-width;
+
+$grid-gutter: 10px;
+$grid-columns: 12;
 
 
 

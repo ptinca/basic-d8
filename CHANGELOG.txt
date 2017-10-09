@@ -1,0 +1,12 @@
+
+CHANGELOG
+---------
+
+Version 2.0.0
+  - Updated README.txt
+  - Removed _mixins.scss in sass/design because it was a duplicate from sass/base
+  - Added sass/base/grid folder
+  - Added sass/vendor folder with _vendor.scss file
+
+Version 1.0.0
+  - Initial creation

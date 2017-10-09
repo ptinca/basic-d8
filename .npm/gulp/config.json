@@ -10,9 +10,9 @@
     }
   },
   "sass": {
-    "src": "../sass/**/*.scss",
-    "destination": "../stylesheets",
-    "sourcemaps": "../stylesheets",
+    "src": "./sass/**/*.scss",
+    "destination": "./assets/stylesheets",
+    "sourcemaps": "./",
     "config": {
       "style": "compressed",
       "errLogToConsole": true,
@@ -24,5 +24,11 @@
       "ie 9",
       "ie 10"
     ]
+  },
+  "javascript": {
+    "file": "app.js",
+    "src": "./javascripts/*.js",
+    "destination": "./assets/scripts",
+    "sourcemaps": "./"
   }
 }

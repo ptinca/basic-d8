@@ -23,7 +23,7 @@
 var gulp = require('gulp');
 
 // Config file
-var config = require('./gulp/config.json')
+var config = require('./gulp/config.json');
 
 // Auto load all required plugins
 var $ = require('gulp-load-plugins')({
@@ -31,7 +31,7 @@ var $ = require('gulp-load-plugins')({
 	scope: 'dependencies',
 	rename: {
 		'jshint': 'jshintCore',
-		'jshint-stylish': 'stylish',
+		'jshint-stylish': 'stylish'
 	}
 });
 
@@ -40,7 +40,7 @@ var messages = {
 	error: function(err) {
 		$.notify.onError({
 			title: config.messages.error.title,
-			message: config.messages.error.message,
+			message: config.messages.error.message
 		}) (err);
 
 		this.emit('end');
@@ -50,7 +50,7 @@ var messages = {
 		message: config.messages.success.message,
 		onLast: true
 	}
-}
+};
 
 // Load tasks from files
 $.loadSubtasks('gulp/tasks/*.js', $, config, messages);
@@ -62,5 +62,5 @@ gulp.task('default', function() {
 
 // Gulp build task to run all tasks just once
 gulp.task('build', function() {
-	gulp.start('styles');
+	gulp.start('styles', 'scripts');
 });

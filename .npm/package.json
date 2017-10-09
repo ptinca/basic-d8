@@ -1,22 +1,27 @@
 {
-  "name": "Kickstarter",
-  "version": "1.0.0",
-  "description": "Drupal theme files to quickly kickstart a new theme development.",
+  "name": "basic-d8",
+  "version": "2.0.0",
+  "description": "A basic Drupal 8 theme to get you quickly started with theming.",
   "main": "gulpfile.js",
   "scripts": {
     "setup": "npm install",
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
-  "author": {
-    "name": "Aljosa"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptinca/basic-d8.git"
   },
-  "license": "MIT",
+  "author": {
+    "name": "ptinca",
+    "url": "http://ptinca.eu"
+  },
+  "license": "GPL 2",
+  "homepage": "https://github.com/ptinca/basic-d8",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cache": "^0.4.5",
     "gulp-concat": "^2.6.0",
-    "gulp-imagemin": "^3.0.3",
     "gulp-jshint": "^2.0.1",
     "gulp-load-plugins": "^1.2.4",
     "gulp-load-subtasks": "^1.1.2",

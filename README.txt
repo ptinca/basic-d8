@@ -44,8 +44,8 @@ Inside the .npm/gulp folder are .js files for each task and a config.json file w
 Gulp tasks:
   gulp scripts
   gulp styles
-  gulp watch
   gulp build
+  gulp watch
 
 
 Source files

@@ -10,9 +10,9 @@
     }
   },
   "sass": {
-    "src": "./sass/**/*.scss",
-    "destination": "./assets/stylesheets",
-    "sourcemaps": "./",
+    "src": "../sass/**/*.scss",
+    "destination": "../assets/stylesheets",
+    "sourcemaps": "../stylesheets",
     "config": {
       "style": "compressed",
       "errLogToConsole": true,
@@ -26,9 +26,9 @@
     ]
   },
   "javascript": {
-    "file": "app.js",
-    "src": "./javascripts/*.js",
-    "destination": "./assets/scripts",
-    "sourcemaps": "./"
+    "file": "main.js",
+    "src": "../js/*.js",
+    "destination": "../assets/scripts",
+    "sourcemaps": "../scripts"
   }
 }

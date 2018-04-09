@@ -33,7 +33,6 @@ Gulp
 .npm
     |-- gulp
         |-- tasks
-            |-- images.js
             |-- scripts.js
             |-- styles.js
             |-- watch.js

@@ -2,6 +2,12 @@
 CHANGELOG
 ---------
 
+Version 2.1.0
+  - Updated Font Awesome to 5.0.9
+  - Updated README.txt
+  - Added page.html.twig to templates
+  - Updated gulp files and made minor changes to scss
+
 Version 2.0.0
   - Updated README.txt
   - Removed _mixins.scss in sass/design because it was a duplicate from sass/base

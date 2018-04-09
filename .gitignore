@@ -15,4 +15,5 @@ sftp-settings.json
 *.sublime-workspace
 
 # Ignore compiled files
-assets
+assets/scripts
+assets/stylesheets

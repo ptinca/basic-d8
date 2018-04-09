@@ -20,7 +20,6 @@ module.exports = function(gulp, $, config, messages) {
   		.pipe($.jshint.reporter($.stylish))
   		.pipe($.jshint.reporter('fail'))
       .pipe($.sourcemaps.init())
-      .pipe($.concat(config.javascript.file))
       .pipe($.sourcemaps.write(config.javascript.sourcemaps))
       .pipe(gulp.dest(config.javascript.destination))
       .pipe($.notify(messages.success));
